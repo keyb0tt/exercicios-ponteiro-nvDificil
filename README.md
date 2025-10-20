@@ -1,1 +1,0 @@
-# exercicios-ponteiro-nvDificil

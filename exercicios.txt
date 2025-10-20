@@ -1,0 +1,112 @@
+🔴 25 Exercícios Difíceis de Ponteiros (Aplicações Práticas)
+
+🎯 Objetivo: aplicar ponteiros em vetores, matrizes, strings, funções, malloc e estruturas de dados.
+
+26️⃣ Vetor dinâmico simples
+
+Use malloc para criar um vetor de tamanho n, preencha com números e exiba.
+
+27️⃣ Soma de vetor dinâmico
+
+Crie uma função que receba um ponteiro e o tamanho do vetor e retorne a soma dos elementos.
+
+28️⃣ Redimensionar vetor
+
+Use realloc para dobrar o tamanho do vetor e leia novos valores.
+
+29️⃣ Liberação de memória
+
+Crie e preencha um vetor com malloc, depois use free() e mostre que o ponteiro agora é inválido.
+
+30️⃣ Matriz dinâmica (ponteiro de ponteiro)
+
+Crie uma matriz NxM com int **matriz, leia e exiba os valores.
+
+31️⃣ Troca de vetores
+
+Crie uma função que troque o conteúdo de dois vetores de mesmo tamanho usando ponteiros.
+
+32️⃣ Copiar vetor
+
+Crie uma função que copie um vetor em outro usando apenas ponteiros.
+
+33️⃣ String com ponteiros
+
+Crie uma função que conte o tamanho de uma string sem usar strlen().
+
+34️⃣ Inverter string
+
+Crie uma função que receba uma string e a inverta usando apenas ponteiros.
+
+35️⃣ Contar vogais
+
+Crie uma função que receba uma string (char *) e retorne o número de vogais.
+
+36️⃣ Concatenar strings
+
+Crie uma função concatenar(char *destino, char *origem) que una duas strings manualmente.
+
+37️⃣ Comparar strings
+
+Crie uma função comparar(char *a, char *b) que retorne 1 se forem iguais, 0 caso contrário.
+
+38️⃣ Matriz transposta com ponteiros
+
+Crie uma função que receba uma matriz NxM e gere sua transposta usando ponteiros.
+
+39️⃣ Vetor de ponteiros para string
+
+Crie um vetor de ponteiros (char *nomes[]) com vários nomes e exiba todos.
+
+40️⃣ Ponteiro em struct
+
+Crie uma struct Pessoa com nome e idade.
+Crie um ponteiro para struct e mostre os dados com ->.
+
+41️⃣ Função com ponteiro para struct
+
+Crie uma função void mostrarPessoa(struct Pessoa *p) que exiba nome e idade.
+
+42️⃣ Vetor de structs com ponteiros
+
+Crie um vetor de struct Pessoa e percorra-o com ponteiros.
+
+43️⃣ Lista encadeada simples
+
+Crie uma struct No { int valor; struct No *prox; } e permita inserir nós dinamicamente.
+
+44️⃣ Remover elemento da lista
+
+Crie uma função para remover um nó de uma lista encadeada simples.
+
+45️⃣ Função que retorna vetor alocado
+
+Crie uma função que receba n e retorne um ponteiro para vetor preenchido de 1 a n.
+
+46️⃣ Vetor de ponteiros para int
+
+Crie um vetor de ponteiros (int *v[5]) e faça cada ponteiro apontar para uma variável diferente.
+
+47️⃣ Passagem por referência múltipla
+
+Crie uma função divisao(int *a, int *b, int *quociente, int *resto).
+
+48️⃣ Recursão com ponteiro
+
+Crie uma função recursiva que receba um vetor e o tamanho e exiba os elementos usando ponteiro.
+
+49️⃣ Alocação de matriz triangular
+
+Crie uma matriz triangular inferior (linha i tem i elementos) usando ponteiros duplos.
+
+50️⃣ Ponteiro para função
+
+Crie uma função int soma(int a, int b) e um ponteiro para função que aponte para ela e invoque via ponteiro.
+
+🧭 Ordem sugerida de aprendizado
+
+Faça os 25 primeiros para entender a mecânica dos ponteiros (endereços e desreferência).
+
+Depois, avance para os 25 seguintes para aplicar em situações reais (strings, structs e memória dinâmica).
+
+Use printf("%p", ptr); constantemente — visualizar endereços é fundamental.
