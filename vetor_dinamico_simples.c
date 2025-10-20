@@ -15,7 +15,17 @@ int main(){
     if(array == NULL){
         printf("Erro ao alocar memória\n");
         return 1;
+    } else {
+        printf("\n\nMemória alocada com sucesso\n");
     }
+
+    printf("\n\nPreencha o conteúdo da array:\n\n");
+    for(int i = 0; i < size; i++){
+        printf("Array[%d]: ", i + 1);
+        scanf("%d", &array[i]);
+    }
+
+    free(array);
 
     return 0;
 }
