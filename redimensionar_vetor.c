@@ -6,7 +6,7 @@ int main(){
     system("clear");
     int size, count = 1;
 
-    // -----------------Manipulação-da-array-original--->;
+    // -----------------Manipulação-da-array-original--->
     size = 5; // Var 'int size' usado para referenciar o n° de elementos de memória que serão alocados inicialmente;
 
     // FUNÇÃO MALLOC: int '*array'<-[Declaração da array/ponteiro original] = (int *) malloc(size:'size' * sizeof(int)); 
@@ -19,19 +19,19 @@ int main(){
     if(array == NULL){ // Caso não exista memória, return 1 (encerrar com true);
         printf("\n\nErro ao alocar memória inicial\n\n");
         return 1;
+        // Fim da verificação;
     }
-    // Fim da verificação;
 
-    printf("\nConteúdo original da array\n\n");
+    printf("\nConteúdo da array original\n\n");
     for(int i = 0; i < size; i++){
-        array[i] = count++;
+        array[i] = count++; // Preenchimento da array original;
         printf("Array[%d]: %d\n", i + 1, array[i]); // Impressão do conteúdo original da array;
     } // Fim da impressão;
-    // ----------------------------Fim-da-manipulação--->;
+    // ----------------------------Fim-da-manipulação--->
     
     
     
-    // ---------Manipulação-da-cópia-'arrayDuplicata'--->;
+    // ---------Manipulação-da-cópia-'arrayDuplicata'--->
     size = 10; // Valor de 'size' alterado para indicar novo tamanho da variável;
 
     // FUNÇÃO REALLOC: É declarada com uma nova array ('*arrayDuplicata') que receberá os valores do ponteiro declarado em seu parâmetro 'ptr:'('array') e criará um novo número de espaços de memória determinado pelo parâmetro 'size:'('size');
@@ -40,11 +40,11 @@ int main(){
 
     // Verificando se a realocação de memória foi bem sucedida;
     if(arrayDuplicata == NULL){
-        printf("\n\n!! Erro ao alocar memória !!\n\n");
+        printf("\n\n!! Erro ao alocar memória !!\n\n"); 
         free(array); // Após o fim do programa (ou uso da memória) sempre deve-se limpar a memória alocada usando free('ponteiro');
         return 1;
+        // Fim da verificação;
     }
-    // Fim da verificação;
     
     array = arrayDuplicata; // Atualização do ponteiro para o bloco da nova array;
 
@@ -52,13 +52,14 @@ int main(){
         array[i] = count++; // Inicializando novas posições da array (começando +1 elemento após o último da array original);
     }
 
-    // Impressão dos elementos da array redimensionada;
-    printf("\n\nElementos do vetor redimensionado: \n");
+    
+    printf("\n\nElementos da array redimensionada: \n");
     for(int i = 0; i < size; i++){
-        printf("Array[%d]: %d\n", i + 1, array[i]);
-    }
-
+        printf("Array[%d]: %d\n", i + 1, array[i]); // Impressão dos elementos da array redimensionada;
+    } // Fim da impressão;
+    
     free(array); // Liberação da memória alocada;
+    // ----------------------------Fim-da-manipulação--->
 
     return 0;
 }
