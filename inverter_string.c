@@ -5,26 +5,33 @@
 void reverseString(char *mainString)
 {
     char *mainStringPtr = mainString;
-    int stringSize = 0, x = 0;
+    int stringSize = 0;
     
     while(*mainStringPtr != '\0')
     {
+        printf("%c", *mainStringPtr);
         mainStringPtr++, stringSize++;
     }
+    
+    printf("\n\nstringsize : %d\n\n", stringSize);
+    char *tempStringPtr = (char *)malloc(stringSize * sizeof(char));
+    
+    int x = stringSize - 1;
 
-    char *tempString = (char *)malloc(stringSize * sizeof(char));
-
-    for (int i = stringSize; i >= 0; i--)
+    while(*tempStringPtr != '\0')
     {
-        tempString[x] = *(mainString + i);
-        x--;
+        *tempStringPtr++ = mainString[x--];
     }
 
-    for (int i = stringSize; i >= 0; i--)
+
+    
+    for (int i = 0; i < 6; i++)
     {
-        mainString[i] = *(tempString + stringSize);
-        printf("%c", *mainString);
+        printf("%c", *(tempStringPtr++));
     }
+    
+    
+
 }
 
 int	main()
