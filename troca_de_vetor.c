@@ -55,6 +55,5 @@ int	main()
         printf("Array2[%d] = %d\n", i + 1, array2[i]);    
     }
 
-
     return 0;
 }
