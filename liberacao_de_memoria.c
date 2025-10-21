@@ -24,6 +24,6 @@ int main(){
         printf("Array[%d] = %d", i + 1, array[i]);
         printf("\n");
     }
-
+    
     return 0;
 }
