@@ -30,7 +30,6 @@ int main(){
     // ----------------------------Fim-da-manipulação--->
     
     
-    
     // ---------Manipulação-da-cópia-'arrayDuplicata'--->
     size = 10; // Valor de 'size' alterado para indicar novo tamanho da variável;
 
